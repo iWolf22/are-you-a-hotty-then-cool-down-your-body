@@ -1,0 +1,8 @@
+{
+    "name": "basic-socket",
+    "version": "0.0.1",
+    "description": "JamHacks",
+    "dependencies": {
+        "serialport": "^9.0.1"
+    }
+}
