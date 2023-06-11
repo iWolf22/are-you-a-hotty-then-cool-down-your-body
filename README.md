@@ -62,7 +62,7 @@ In the future, we plan on adding an additional fan for twice the cooling ability
 
 ## Presentation
 
-![alt text]([https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/505/789/datas/gallery.jpg](https://i.ibb.co/4YV6QNG/project.jpg))
+![alt text](https://i.ibb.co/4YV6QNG/project.jpg)
 
 ---
 
