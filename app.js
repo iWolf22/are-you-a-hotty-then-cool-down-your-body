@@ -28,7 +28,7 @@ var io = require('socket.io').listen(app);
 
 io.on('connection', function(socket) {
     
-    socket.on('lights',function(data){
+    socket.on('lights',function(data) {
         
         console.log( data );
         port.write( data.status );
