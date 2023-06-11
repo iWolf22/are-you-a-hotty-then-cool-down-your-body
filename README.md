@@ -1,4 +1,4 @@
-# Hottie Cooler are-you-a-hotty-then-cool-down-your-body
+# Hottie Cooler: are-you-a-hotty-then-cool-down-your-body
 
 ---
 
