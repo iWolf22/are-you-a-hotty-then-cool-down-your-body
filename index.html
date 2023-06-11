@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+        <title>🔥HOT ASF🔥</title>
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/891/891028.png">
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js'></script>
+    </head>
+
+    <style>
+
+        html {
+            scroll-behavior: smooth;
+            background-color: #FEF5ED;
+        }
+
+        .header-container {
+            background-color: #D3E4CD;
+            margin: -8px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .header-text {
+            background-color: #D3E4CD;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 20px;
+            display: inline-block;
+            border: none;
+            margin-left: 20px;
+            margin-right: 50px;
+            padding: 10px;
+            border-radius: 10%;
+            transition: 0.5s;
+            cursor: pointer;
+            color: #051F20;
+        }
+
+        .header-text:hover {
+            background-color: #ADC2A9;
+        }
+
+        .info-container {
+            background-color: #D3E4CD;
+            margin: 100px 15% 50px 15%;
+            padding: 20px;
+        }
+
+        .info-title {
+            text-align: center;
+            font-size: 50px;
+            margin: 10px;
+            padding: 10px;
+            color: #051F20;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .info-photo {
+            border-radius: 10px;
+            width: 30%;
+            height: 30%;
+            margin: 30px 30px 10px 30px;
+            float: left;
+        }
+
+        .info-text {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 20px;
+            padding: 20px;
+            margin: 20px;
+            margin-top: 20px;
+            line-height: 2;
+            color: #051F20;
+        }
+
+        .parent-body-area-container {
+            background-color: #D3E4CD;
+            margin: 100px 15% 100px 15%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .body-area-container {
+            background-color: #D3E4CD;
+            padding: 0px 20px 0px 20px;
+            margin: 0px 10px 0px 10px;
+            border: none;
+            transition: 0.5s;
+            border-radius: 10%;
+            display: inline-block;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .body-area-container:hover {
+            background-color: #ADC2A9;
+        }
+
+        .body-area-images {
+            height: 120px;
+            width: 120px;
+        }
+
+        .body-area-text {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 20px;
+            color: #051F20;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .body-area-text-small {
+            font-size: 10px;
+            color: #051F20;
+        }
+
+        .flex-parent {
+            display: flex;
+        }
+        
+        .jc-center {
+            justify-content: center;
+        }
+
+        .smaller-font {
+            font-size: 30px;
+        }
+
+    </style>
+
+    <body>
+
+        <div class="header-container" id="home-div">
+            <button class="header-text">Are You A Hotty Then Cool Down Your Body</button>
+        </div>
+
+        <div class="parent-body-area-container">
+            <p class="info-title">✇ Control Fan Speed ✇</p>
+            <hr class="alt-color">
+
+                <div id="lightWhite" class="body-area-container">
+                    <div class="flex-parent jc-center">
+                        <p class="body-area-text">Temp Control</p>
+                    </div>
+                    <img class="body-area-images" src='https://i.ibb.co/0QVjGRj/Fan-Speed-0.png' alt="fan speed logo">
+                    <div class="flex-parent jc-center">
+                        <p class="body-area-text body-area-text-small">⬜ Red Led ⬜</p>
+                    </div>
+                </div>
+
+                <div id="lightRed" class="body-area-container">
+                    <div class="flex-parent jc-center">
+                        <p class="body-area-text">Fan Speed 0%</p>
+                    </div>
+                    <img class="body-area-images" src='https://i.ibb.co/0QVjGRj/Fan-Speed-0.png' alt="fan speed logo">
+                    <div class="flex-parent jc-center">
+                        <p class="body-area-text body-area-text-small">🟥 Red Led 🟥</p>
+                    </div>
+                </div>
+
+                <div id="lightYellow" class="body-area-container">
+                    <div class="flex-parent jc-center">
+                        <p class="body-area-text">Fan Speed 33%</p>
+                    </div>
+                    <img class="body-area-images" src='https://i.ibb.co/wChHRDV/Fan-Speed-1.png' alt="fan speed logo">
+                    <div class="flex-parent jc-center">
+                        <p class="body-area-text body-area-text-small">🟨 Yellow Led 🟨</p>
+                    </div>
+                </div>
+
+                <div id="lightGreen" class="body-area-container">
+                    <div class="flex-parent jc-center">
+                        <p class="body-area-text">Fan Speed 67%</p>
+                    </div>
+                    <img class="body-area-images" src='https://i.ibb.co/p1d9pST/Fan-Speed-2.png' alt="fan speed logo">
+                    <div class="flex-parent jc-center">
+                        <p class="body-area-text body-area-text-small">🟩 Green Led 🟩</p>
+                    </div>
+                </div>
+
+                <div id="lightBlue" class="body-area-container">
+                    <div class="flex-parent jc-center">
+                        <p class="body-area-text">Fan Speed 100%</p>
+                    </div>
+                    <img class="body-area-images" src='https://i.ibb.co/QQzvPjr/Fan-Speed-3.png' alt="fan speed logo">
+                    <div class="flex-parent jc-center">
+                        <p class="body-area-text body-area-text-small">🟦 Blue Led 🟦</p>
+                    </div>
+                </div>
+                
+                <hr class="alt-color">
+                <p id="changing_text" class="info-title">🟥 Fan Speed: 0% 🟥</p>
+
+            </div>
+
+
+        <div class="header-container" id="home-div">
+            <button id="changing_text" class="header-text">Daniel Eskiocak • Jacob Bakker • Joshua Dierickse • Peter Song</button>
+        </div>
+
+        <script>
+
+            var changing_text = document.getElementById("changing_text");
+
+            var socket = io();
+
+            document.getElementById('lightWhite').onclick = function() {
+                socket.emit('lights', {"status":"5" });
+                changing_text.innerHTML = "⬜ Fan Speed: temp ⬜";
+                console.log("5");
+            };
+
+            document.getElementById('lightRed').onclick = function() {
+                socket.emit('lights', {"status":"1" });
+                changing_text.innerHTML = "🟥 Fan Speed: 0% 🟥";
+                console.log("1");
+            };
+
+            document.getElementById('lightYellow').onclick = function(){               
+                socket.emit('lights', {"status":"2" });
+                changing_text.innerHTML = "🟨 Fan Speed: 33% 🟨";
+                console.log("2");
+            };
+
+            document.getElementById('lightGreen').onclick = function(){               
+                socket.emit('lights', {"status":"3" });
+                changing_text.innerHTML = "🟩 Fan Speed: 67% 🟩";
+                console.log("3");
+            };
+
+            document.getElementById('lightBlue').onclick = function(){               
+                socket.emit('lights', {"status":"4" });
+                changing_text.innerHTML = "🟦 Fan Speed: 100% 🟦";
+                console.log("4");
+            };
+
+        </script>
+    </body>
+</html>
