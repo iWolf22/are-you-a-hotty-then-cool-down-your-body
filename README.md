@@ -11,15 +11,19 @@ Our inspiration for this project came from our experiences attending a High Scho
 As we approach the summertime, temperatures and humidity levels are getting higher and higher, making it harder for students and educators to focus on their learning. This device allows students a convenient and easy way to cool down and stay comfortable while working. It achieves this goal by using a state-of-the-art fan to project air onto a person which will remove the heat from them through force convection (displacing the warm air around their body with cooler air), thus reducing overall body temperature. The fan speed will change based on either the ambient temperature or the user input by the remote or online user interface. The four LEDs indicate the speed of the fan (red: slowest (0%), yellow: slow (33%), green: fast (67%), blue: fastest (100%)).
 
 ![alt text](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/505/788/datas/gallery.jpg)
+
 ^ Full Picture of Fans ^
 
 ![alt text](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/505/789/datas/gallery.jpg)
+
 ^ LCD Display Indicating Temperature and Humidity ^
 
 ![alt text](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/506/169/datas/gallery.jpg)
+
 ^ Website With Fan ^
 
 ![alt text](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/506/170/datas/gallery.jpg)
+
 ^ Fan Controls Through Website ^
 
 ---
